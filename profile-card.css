@@ -46,7 +46,6 @@ table {
 	box-sizing: border-box;
 }
 body{
-  margin: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,26 +71,19 @@ h1{
 .links{
   letter-spacing: 1rem;
 }
-h1,h2,h3,h4,h5,h6,hgroup,
-ul,ol,dd,
-p,figure,
-pre,table,fieldset,hr 
-img,
+
 .profile-card{
-    margin-bottom: 1rem;
-}
-.profile-card{
-  width: 90%;
+  width: 100%;
   background-color: hsla(0, 0%, 100%, .7);
   box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
   border-left: 1px solid #635F64;
   border-right: 1px solid #635F64;
-  border-radius:20px 20px 20px 20px; 
+  /*border-radius:20px 20px 20px 20px; */
 }
 #head-background img{
   width: 100%;
   height: auto;
-  border-radius:20px 20px 0 0;
+  /*border-radius:20px 20px 0 0;*/
 }
 .head, .links{
   text-align: center;
@@ -157,8 +149,12 @@ a{
 			top: 0;
 			height: 100%;
 			width: 70%;
+            border-radius:20px 20px 20px 20px;
 		}
-
+  
+  #head-background img{
+    border-radius: 20px 20px 0 0;
+  }
 }
 @media (min-width: 1025px) {
   body{
@@ -168,6 +164,10 @@ a{
 	.profile-card {
       position: relative;
 		width: 50%;
+        border-radius: 20px 20px 20px 20px;
 	}
+    #head-background img{
+    border-radius: 20px 20px 0 0;
+  }
 
 }
